@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CandyBars</title>
+    <nav>
+        <div class="nav-left">
+          <a class="hover" href="#home"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li class="hover"><a class="hover" href="#home">Home</a></li>
+            <li class="hover"><a class="hover" href="#about">About</a></li>
+            <li class="hover"><a class="hover" href="#services">Services</a></li>
+            <li class="hover"><a class="hover" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+</head>
+<body>
+      <div class="product-page">
+        <div class="product-image">
+          <img src="product.png" alt="Product Name">
+        </div>
+        <div class="product-info">
+          <h1>Product Name</h1>
+          <p>Product Description</p>
+          <h2>Price: $XXX</h2>
+          <form action="add-to-cart.php" method="post">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" min="1" value="1">
+            <input type="hidden" name="product-id" value="123">
+            <input type="submit" value="Add to Cart">
+          </form>
+        </div>
+      </div>
+      
+</body>
+</html>
